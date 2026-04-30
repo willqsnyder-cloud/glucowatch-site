@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GlucoWatch Elite | Non-Invasive Glucose Monitoring</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #FAFAF9;
+            color: #1C1917;
+        }
+        .glass-effect {
+            background: rgba(250, 250, 249, 0.8);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+        }
+        .gradient-text {
+            background: linear-gradient(135deg, #0D9488 0%, #065F46 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .hero-pattern {
+            background-image: radial-gradient(#0D9488 0.5px, transparent 0.5px);
+            background-size: 24px 24px;
+            opacity: 0.1;
+        }
+        .persona-card {
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        .persona-card:hover {
+            transform: translateY(-8px);
+        }
+    </style>
+</head>
+<body class="antialiased">
+
+    <nav class="fixed top-0 w-full z-50 border-b border-stone-200 glass-effect">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-20 items-center">
+                <div class="flex items-center gap-2">
+                    <div class="w-10 h-10 bg-teal-600 rounded-xl flex items-center justify-center text-white text-xl shadow-lg">
+                        ⌚
+                    </div>
+                    <span class="font-extrabold text-2xl tracking-tighter text-stone-900 uppercase">Gluco<span class="text-teal-600">Watch</span></span>
+                </div>
+                <div class="hidden md:flex space-x-8 text-sm font-semibold text-stone-600 uppercase tracking-widest">
+                    <a href="#features" class="hover:text-teal-600 transition-colors">Features</a>
+                    <a href="#personas" class="hover:text-teal-600 transition-colors">Testimonials</a>
+                    <a href="#register" class="px-6 py-2 bg-stone-900 text-white rounded-full hover:bg-teal-700 transition-all shadow-md">Join Waitlist</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <section class="relative pt-48 pb-24 overflow-hidden min-h-[80vh] flex flex-col items-center">
+        <div class="absolute inset-0 hero-pattern -z-10"></div>
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <div class="inline-flex items-center px-4 py-2 rounded-full bg-teal-50 border border-teal-100 text-teal-700 text-xs font-bold uppercase tracking-widest mb-8">
+                Pre-Order Launch Q4 2026
+            </div>
+            <h1 class="text-5xl md:text-7xl font-extrabold text-stone-900 mb-8 tracking-tight leading-[1.1]">
+                Monitoring.<br>
+                <span class="gradient-text">Zero Needles.</span>
+            </h1>
+            <p class="max-w-2xl mx-auto text-xl text-stone-600 mb-12 leading-relaxed font-light">
+                The world's first medical-grade smartwatch using NIR Spectroscopy to track blood sugar non-invasively. Accurate, continuous, and completely pain-free.
+            </p>
+            
+            <div class="flex flex-col sm:flex-row justify-center gap-4">
+                <a href="#register" class="px-10 py-5 bg-teal-600 text-white font-bold rounded-2xl text-lg shadow-xl shadow-teal-200 hover:bg-teal-700 hover:-translate-y-1 transition-all">
+                    Join the Waitlist
+                </a>
+                <a href="#features" class="px-10 py-5 bg-white text-stone-900 font-bold rounded-2xl text-lg border border-stone-200 hover:bg-stone-50 transition-all">
+                    How it Works
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section id="personas" class="py-24 bg-stone-50 border-y border-stone-100">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold text-stone-900 mb-4">Empowering Every Journey</h2>
+                <p class="text-stone-600 max-w-2xl mx-auto">Real stories from the people who will benefit most from non-invasive monitoring.</p>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="persona-card bg-white p-8 rounded-[2.5rem] shadow-sm border border-stone-100 flex flex-col">
+                    <div class="flex items-center gap-4 mb-6">
+                        <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&q=80&w=150&h=150" alt="David S." class="w-16 h-16 rounded-2xl object-cover shadow-sm">
+                        <div>
+                            <h4 class="font-bold text-stone-900">David S.</h4>
+                            <p class="text-[10px] text-teal-600 font-black uppercase tracking-[0.2em]">Managed Diabetic</p>
+                        </div>
+                    </div>
+                    <blockquote class="text-stone-600 italic leading-relaxed text-sm">
+                        "After 15 years of daily finger pricks, the 'burnout' was overwhelming. Being able to check my levels discreetly during board meetings has given me my life back."
+                    </blockquote>
+                    <div class="mt-8 pt-4 border-t border-stone-50">
+                        <span class="text-[10px] font-bold text-stone-400 uppercase tracking-widest">Key Impact: SOS Alerts</span>
+                    </div>
+                </div>
+                <div class="persona-card bg-white p-8 rounded-[2.5rem] shadow-sm border border-stone-100 flex flex-col">
+                    <div class="flex items-center gap-4 mb-6">
+                        <img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&q=80&w=150&h=150" alt="Elena R." class="w-16 h-16 rounded-2xl object-cover shadow-sm">
+                        <div>
+                            <h4 class="font-bold text-stone-900">Elena R.</h4>
+                            <p class="text-[10px] text-teal-600 font-black uppercase tracking-[0.2em]">Pre-emptive Tracker</p>
+                        </div>
+                    </div>
+                    <blockquote class="text-stone-600 italic leading-relaxed text-sm">
+                        "My doctor warned me I was borderline. GlucoWatch showed me exactly which 'healthy' snacks were causing huge spikes. I'm finally reversing my insulin resistance."
+                    </blockquote>
+                    <div class="mt-8 pt-4 border-t border-stone-50">
+                        <span class="text-[10px] font-bold text-stone-400 uppercase tracking-widest">Key Impact: Insights Engine</span>
+                    </div>
+                </div>
+                <div class="persona-card bg-white p-8 rounded-[2.5rem] shadow-sm border border-stone-100 flex flex-col">
+                    <div class="flex items-center gap-4 mb-6">
+                        <img src="https://images.unsplash.com/photo-1492562080023-ab3db95bfbce?auto=format&fit=crop&q=80&w=150&h=150" alt="Marcus T." class="w-16 h-16 rounded-2xl object-cover shadow-sm">
+                        <div>
+                            <h4 class="font-bold text-stone-900">Marcus T.</h4>
+                            <p class="text-[10px] text-teal-600 font-black uppercase tracking-[0.2em]">Performance Athlete</p>
+                        </div>
+                    </div>
+                    <blockquote class="text-stone-600 italic leading-relaxed text-sm">
+                        "I used to guess when to fuel during 100-mile races. Now I see my glucose trend right next to my heart rate. I haven't 'hit the wall' once since I started training with it."
+                    </blockquote>
+                    <div class="mt-8 pt-4 border-t border-stone-50">
+                        <span class="text-[10px] font-bold text-stone-400 uppercase tracking-widest">Key Impact: Live Fueling</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="register" class="py-24 bg-stone-900 relative overflow-hidden">
+        <div class="absolute inset-0 hero-pattern opacity-5"></div>
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-center">
+            <div id="form-container">
+                <h2 class="text-4xl md:text-5xl font-extrabold text-white mb-6 tracking-tight">Reserve Your Spot.</h2>
+                <p class="text-stone-400 text-lg mb-12 max-w-xl mx-auto font-light">Join over 25,000 pioneers. Get exclusive access to pre-order pricing and clinical trial participation updates.</p>
+                <form id="waitlist-form" class="space-y-4 max-w-md mx-auto">
+                    <input type="text" id="name" placeholder="Full Name" required class="w-full px-8 py-5 rounded-2xl bg-stone-800 border border-stone-700 text-white placeholder-stone-500 focus:ring-2 focus:ring-teal-500 outline-none transition-all">
+                    <input type="email" id="email" placeholder="Email Address" required class="w-full px-8 py-5 rounded-2xl bg-stone-800 border border-stone-700 text-white placeholder-stone-500 focus:ring-2 focus:ring-teal-500 outline-none transition-all">
+                    <button type="submit" class="w-full py-5 bg-teal-600 text-white font-bold rounded-2xl text-lg hover:bg-teal-500 hover:scale-[1.01] active:scale-[0.99] transition-all shadow-2xl">
+                        Join the Waitlist
+                    </button>
+                </form>
+            </div>
+            <div id="success-message" class="hidden py-16">
+                <div class="w-20 h-20 bg-teal-600/20 text-teal-500 rounded-full flex items-center justify-center text-4xl mx-auto mb-8">✓</div>
+                <h2 class="text-4xl font-extrabold text-white mb-4">You're on the list.</h2>
+                <p class="text-stone-400 text-lg mb-8">We've reserved your place. Check your inbox for a confirmation shortly.</p>
+                <button onclick="window.location.reload()" class="text-teal-500 font-bold hover:text-teal-400 transition-colors uppercase tracking-widest text-xs">Add another email</button>
+            </div>
+        </div>
+    </section>
+
+    <footer class="py-12 bg-white border-t border-stone-100">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <span class="font-bold text-stone-900 tracking-tight uppercase text-xs">© 2026 GlucoWatch Health Systems. All Rights Reserved.</span>
+        </div>
+    </footer>
+
+    <script>
+        const form = document.getElementById('waitlist-form');
+        const formContainer = document.getElementById('form-container');
+        const successMessage = document.getElementById('success-message');
+
+        form.addEventListener('submit', (e) => {
+            e.preventDefault();
+            const name = document.getElementById('name').value;
+            const email = document.getElementById('email').value;
+            console.log('Registering:', { name, email });
+            formContainer.classList.add('hidden');
+            successMessage.classList.remove('hidden');
+        });
+    </script>
+</body>
+</html>
