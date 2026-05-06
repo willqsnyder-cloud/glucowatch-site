@@ -1,3 +1,24 @@
+<script>
+    // 1. PULSE CHECK - Add this line:
+    alert("The script is loaded!"); 
+
+    const form = document.getElementById('waitlist-form');
+    const formContainer = document.getElementById('form-container');
+    const successMessage = document.getElementById('success-message');
+    const submitBtn = document.getElementById('submit-btn');
+
+    form.addEventListener('submit', (e) => {
+        e.preventDefault();
+        
+        // 2. SECOND PULSE CHECK - Add this line:
+        alert("The button was clicked!"); 
+
+        submitBtn.disabled = true;
+        submitBtn.innerText = 'Syncing...';
+        
+        // ... the rest of your fetch code ...
+    });
+</script>
 <!DOCTYPE html>
 <html lang="en" class="scroll-smooth">
 <head>
