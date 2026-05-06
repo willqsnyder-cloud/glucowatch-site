@@ -95,6 +95,9 @@
 </main>
 
 <script>
+    // Console log to verify script load
+    console.log("GlucoWatch Script Loaded Successfully.");
+
     const form = document.getElementById('waitlist-form');
     const formContainer = document.getElementById('form-container');
     const successMessage = document.getElementById('success-message');
@@ -103,26 +106,38 @@
     if(form) {
         form.addEventListener('submit', (e) => {
             e.preventDefault();
+            console.log("Form submission detected...");
+            
             submitBtn.disabled = true;
             submitBtn.innerText = 'Syncing...';
 
-            const scriptURL = 'YOUR_APPS_SCRIPT_URL_HERE'; // <--- PUT YOUR LINK HERE
+            // ⚠️ REPLACE THIS with your deployment URL
+            const scriptURL = 'https://script.google.com/macros/s/AKfycbwhc4aNE5KqUKvKIEJu84tCFpcVRp4XtJHEyFi7eopSpuxy6a7vHcUWNjMQB3J60vwo/exec'; 
 
-            const formData = new FormData(form);
+            // Use URLSearchParams for maximum compatibility with Google Apps Script
+            const params = new URLSearchParams();
+            params.append('name', document.getElementById('name').value);
+            params.append('email', document.getElementById('email').value);
 
-            fetch(scriptURL, { method: 'POST', body: formData, mode: 'no-cors' })
+            fetch(scriptURL, { 
+                method: 'POST', 
+                body: params,
+                mode: 'no-cors' // Google Apps Script requires no-cors for direct POSTs from browsers
+            })
             .then(() => {
+                console.log("Request sent to Google Apps Script.");
                 formContainer.classList.add('hidden');
                 successMessage.classList.remove('hidden');
             })
             .catch(error => {
-                console.error('Error!', error.message);
+                console.error('Network Error:', error);
+                alert('Communication error. Check console for details.');
                 submitBtn.disabled = false;
                 submitBtn.innerText = 'Claim Your Spot';
             });
         });
     } else {
-        console.error("Form with ID 'waitlist-form' not found!");
+        console.error("Critical Error: Form 'waitlist-form' was not found in the HTML.");
     }
 </script>
 </body>
